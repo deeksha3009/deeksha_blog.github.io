@@ -19,6 +19,7 @@ from pages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.post_list, name='post_list'),
     path('',views.home),
     path('post/<int:post_id>/',views.post_page),
 

@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from pages.models import Posts
 from pages.models import BlogPost
+
+
+def post_list(request):
+    return render(request, 'pages/post_list.html', {})
 
 
 def home(request):
