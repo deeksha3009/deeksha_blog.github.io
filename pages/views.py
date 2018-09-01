@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from pages.models import Posts
 from pages.models import BlogPost
 
 def post_list(request):
-	myposts=Posts.objects.all()
-	return render(request,"blog/post_list.html",{"post":myposts})
+	posts=Posts.objects.all()
+	# myposts = Posts.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+	return render(request,"blog/post_list.html",{"post":posts})
 
 
 def home(request):

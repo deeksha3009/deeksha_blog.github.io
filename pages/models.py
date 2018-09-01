@@ -8,7 +8,7 @@ class Posts(models.Model):
     published_date = models.DateTimeField(auto_now_add=True)
 
     def publish(self):
-        self.published_date =models.DateTimeField(auto_now_add=True)
+        self.published_date =models.timezone.now()
         self.save()
 
     def __str__(self):
