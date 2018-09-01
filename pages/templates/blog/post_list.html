@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	{% for post in post %}
+		<div class="card" style="width: 55rem;">
+			<div class="card-body">
+	   			<h1 class="card-title"><a href="">{{ post.title }}</a></h1>
+	    		<p class="card-text">published: {{ post.published_date }}</p>
+	    		<p>{{ post.text|linebreaksbr }}</p>
+				    				<!-- <a href="/post/{{post.id}}" class="btn btn-primary">read more</a>  -->
+			</div>
+		</div>
+	{% endfor %}
+{% endblock %}

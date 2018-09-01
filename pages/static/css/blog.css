@@ -1,0 +1,30 @@
+/*.link>a {
+    color: #FCA205;
+    padding-left: 2px;
+}*/
+
+body {
+    padding-left: 15px;
+}
+
+.pk {
+    margin: 50px;
+    border:2px #FCA205;
+
+}
+
+.pk h1 a, .post h1 a:visited {
+
+    color: #000000;
+}
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    font-family: verdana;
+    padding: 20px 20px 20px 40px;
+}
+
+.posting h1 a,.post h1 a:visited{
+	color: #000000;	
+}
