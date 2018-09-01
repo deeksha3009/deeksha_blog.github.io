@@ -4,7 +4,7 @@ from pages.models import BlogPost
 
 def post_list(request):
 	myposts=Posts.objects.all()
-	return render(request,"post_list.html",{"post":myposts})
+	return render(request,"blog/post_list.html",{"post":myposts})
 
 
 def home(request):
