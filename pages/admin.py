@@ -1,4 +1,5 @@
 from django.contrib import admin
+from pages.models import Posts
 from pages.models import BlogPost
 
 
